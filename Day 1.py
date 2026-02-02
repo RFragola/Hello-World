@@ -4,3 +4,4 @@ def main():
     name = " ".join(name.split()).title() # Normalize whitespace and capitalize each word
     print(f"Hello, {name}!")
 
+main()
