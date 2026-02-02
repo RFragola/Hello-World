@@ -46,7 +46,7 @@ def main():
 def endmsg():
     print("")
     print("Thank you for using Grandpa Roob's Calculator!")
-    print("Try my mac and cheese some time!")
+    print("Click here for mac and cheese: https://streamable.com/lf027o")
     print("")
 
 main()
