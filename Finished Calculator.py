@@ -1,30 +1,60 @@
 def main():
-    print("Welcome to the Calculator!")
+    print("")
+    print("Welcome to Grandpa Roob's Calculator!")
+    print("")
     print("Select an operation:")
     print("1. Addition")
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    operation = input("Select operation (Type Corresponding Number): ").strip().lower()
+    print("")
+    operation = input("Input corresponding number: ").strip().lower()
     if operation in ['1', '2', '3', '4']:
+        print("")
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
         if operation == '1':
             result = num1 + num2
             print(f"Sum = {result}")
+            print("")
+            print("Thank you for using Grandpa Roob's Calculator!")
+            print("Try my mac and cheese some time!")
+            print("")
         elif operation == '2':
             result = num1 - num2
             print(f"Difference = {result}")
+            print("")
+            print("Thank you for using Grandpa Roob's Calculator!")
+            print("Try my mac and cheese some time!")
+            print("")
         elif operation == '3':
             result = num1 * num2
             print(f"Product = {result}")
+            print("")
+            print("Thank you for using Grandpa Roob's Calculator!")
+            print("Try my mac and cheese some time!")
+            print("")
         elif operation == '4':
             if num2 == 0:
+                print("")
                 print("Error: DIV/0")
+                print("Restarting Calculator...")
+                print("")
+                main()
             else:
                 result = num1 / num2
                 print(f"Quotient = {result}")
-    else: print("Error: Invalid Operation. Please choose one of the four options above.")
+                print("")
+                print("Thank you for using Grandpa Roob's Calculator!")
+                print("Try my mac and cheese some time!")
+                print("")
+    else: 
+        print("")
+        print("Error: Invalid Operation. Please choose one of the four options provided.")
+        print("Restarting Calculator...")
+        print("")
+        main()
+
 
 
 main()
