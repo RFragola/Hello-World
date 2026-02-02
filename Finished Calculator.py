@@ -16,24 +16,15 @@ def main():
         if operation == '1':
             result = num1 + num2
             print(f"Sum = {result}")
-            print("")
-            print("Thank you for using Grandpa Roob's Calculator!")
-            print("Try my mac and cheese some time!")
-            print("")
+            endmsg()
         elif operation == '2':
             result = num1 - num2
             print(f"Difference = {result}")
-            print("")
-            print("Thank you for using Grandpa Roob's Calculator!")
-            print("Try my mac and cheese some time!")
-            print("")
+            endmsg()
         elif operation == '3':
             result = num1 * num2
             print(f"Product = {result}")
-            print("")
-            print("Thank you for using Grandpa Roob's Calculator!")
-            print("Try my mac and cheese some time!")
-            print("")
+            endmsg()
         elif operation == '4':
             if num2 == 0:
                 print("")
@@ -44,10 +35,7 @@ def main():
             else:
                 result = num1 / num2
                 print(f"Quotient = {result}")
-                print("")
-                print("Thank you for using Grandpa Roob's Calculator!")
-                print("Try my mac and cheese some time!")
-                print("")
+                endmsg()
     else: 
         print("")
         print("Error: Invalid Operation. Please choose one of the four options provided.")
@@ -55,7 +43,11 @@ def main():
         print("")
         main()
 
-
+def endmsg():
+    print("")
+    print("Thank you for using Grandpa Roob's Calculator!")
+    print("Try my mac and cheese some time!")
+    print("")
 
 main()
         
